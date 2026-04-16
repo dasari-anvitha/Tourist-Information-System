@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Information System</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid d-flex justify-content-between">
+
+    <a class="navbar-brand m-0"><b>Tourist Information System</b></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+
+  <div class="collapse navbar-collapse bg-dark px-3" id="menu">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#getintouch">Get in Touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content text-center text-white">
+
+    <h1>Discover Places Around You</h1>
+    <p>Find the best tourist attractions and stays near your location</p>
+
+    <!-- Search -->
+    <div class="input-group mx-auto mt-4" style="max-width: 500px;">
+      <input type="text" id="cityInput" class="form-control"
+        placeholder="Enter location (e.g. Vizag, Hyderabad)">
+      <button class="btn custom-btn" onclick="searchLocation()">Search</button>
+    </div>
+
+    <!-- OR -->
+    <p class="mt-3">OR</p>
+
+    <!-- Location Button -->
+    <button class="btn custom-btn location-btn" onclick="getCurrentLocation()">
+      📍 Use My Current Location
+    </button>
+
+    <!-- Result -->
+    <div id="heroResult" class="mt-4"></div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container text-center mt-5">
+  <h2>About</h2>
+  <p>
+  Toursit Information is a simple web application designed to help users<br>
+  discover tourist attractions and accommodations based on their location.<br>
+  It allows both manual search and automatic location detection for a seamless experience.
+  </p>
+</section>
+
+<!-- Get in Touch-->
+<section id="getintouch" class="container text-center mt-5">
+<h2>Get in Touch</h2>
+<p>Email: travelhelper@gmail.com</p>
+<p>Phone: +91 9876543210</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  <p>© 2026 Tourist Information System | Discover Better, Travel Smarter</p></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
